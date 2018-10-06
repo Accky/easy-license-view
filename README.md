@@ -18,7 +18,7 @@ I think everyone can easily make this , but I did not find it in googling. so, I
 1. Modify the license.xlsx according to your project, and save. license.asset is modified automatic. It is placed under `Assets/Cucurbit/Easy License View/ExcelData`.
 1. Open `Assets/Cucurbit/Easy License View/Excample/Example Scene.unity`.
 1. Run the preview and check the changes.
-1. put `Assets/Cucurbit/Easy License View/Prefab/License View.prefab` in the scene you want to display licenses.
+1. Put `Assets/Cucurbit/Easy License View/Prefab/License View.prefab` in the scene you want to display licenses.
 
 ### Next Step
 I think that this License View is a custom premise.
