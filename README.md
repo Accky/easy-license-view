@@ -10,6 +10,7 @@ I think everyone can easily make this , but I did not find it in googling. so, I
 - Make license text data from excel file. data is Scriptable Object.
 - Easy to edit ui view.
 - Auto fit to screen.
+
 ![cap2.png](doc/img/cap2.png)
 
 ### Usage
