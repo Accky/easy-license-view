@@ -25,3 +25,7 @@ I think that this License View is a custom premise.
 - Let's change UI to your liking. It is possible just by changing the uGUI parts of License View.prefab.
 - Let's use Text Mesh Pro to display fonts cleanly.
 - Let's implement fade in / out for License View. It is easy to implement using DoTween.
+
+### References
+- https://github.com/tsubaki/Unity-Excel-Importer-Maker
+- https://archive.codeplex.com/?p=npoi

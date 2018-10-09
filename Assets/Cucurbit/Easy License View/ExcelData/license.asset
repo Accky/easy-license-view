@@ -11,71 +11,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a6aa8d5ac5559544b7f33d23ba0e833, type: 3}
   m_Name: license
   m_EditorClassIdentifier: 
-  sheets:
-  - name: licenses
-    list:
-    - Title: xxxxxxx
-      Provision: 'The MIT License (MIT)
+  param:
+  - Title: xxxxxxx
+    Provision: 'The MIT License (MIT)
 
 
-        Copyright (c) 2018 xxxxxxxxxxxx
+      Copyright (c) 2018 xxxxxxxxxxxx
 
 
-        Permission is hereby granted, free of charge, to any person obtaining a copy
+      Permission is hereby granted, free of charge, to any person obtaining a copy
 
-        of this software and associated documentation files (the "Software"), to deal
+      of this software and associated documentation files (the "Software"), to deal
 
-        in the Software without restriction, including without limitation the rights
+      in the Software without restriction, including without limitation the rights
 
-        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 
-        copies of the Software, and to permit persons to whom the Software is
+      copies of the Software, and to permit persons to whom the Software is
 
-        furnished to do so, subject to the following conditions:
-
-
-        The above copyright notice and this permission notice shall be included in
-        all
-
-        copies or substantial portions of the Software.
+      furnished to do so, subject to the following conditions:
 
 
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      The above copyright notice and this permission notice shall be included in all
 
-        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-
-        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-
-        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-
-        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-
-        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-        THE
-
-        SOFTWARE.'
-    - Title: yyyyyyy
-      Provision: 'Unity UI Extensions License (BSD)
+      copies or substantial portions of the Software.
 
 
-        Copyright (c) 2018
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+
+      SOFTWARE.'
+  - Title: Easy License View
+    Provision: 'The MIT License (MIT)
 
 
-        Permission is hereby granted, free of charge, to any person obtaining a copy
-        of this software and associated documentation files (the "Software"), to deal
-        in the Software without restriction, including without limitation the rights
-        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-        copies of the Software, and to permit persons to whom the Software is furnished
-        to do so, subject to the following conditions:
+      Copyright (c) 2018 nakagawa akihiro
 
 
-        The above copyright notice and this permission notice shall be included in
-        all copies or substantial portions of the Software.
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+
+      of this software and associated documentation files (the "Software"), to deal
+
+      in the Software without restriction, including without limitation the rights
+
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+
+      copies of the Software, and to permit persons to whom the Software is
+
+      furnished to do so, subject to the following conditions:
 
 
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-        FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
-        OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
-        OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE'
+      The above copyright notice and this permission notice shall be included in all
+
+      copies or substantial portions of the Software.
+
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+
+      SOFTWARE.'
+  - Title: yyyyyyy
+    Provision: 'Unity UI Extensions License (BSD)
+
+
+      Copyright (c) 2018
+
+
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+      of the Software, and to permit persons to whom the Software is furnished to
+      do so, subject to the following conditions:
+
+
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+      INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+      A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+      HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+      OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+      SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE'

@@ -7,7 +7,6 @@ namespace Cucurbit
 {
     public class Provision : MonoBehaviour
     {
-
         [SerializeField]
         Text provisionText;
         public Text ProvisionText { get { return provisionText; } }

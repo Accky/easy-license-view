@@ -12,8 +12,7 @@ namespace Cucurbit
     public class LicenseImporter : AssetPostprocessor
     {
         private static readonly string filePath = "Assets/Cucurbit/Easy License View/ExcelData/license.xlsx";
-        private static readonly string exportPath = "Assets/Cucurbit/Easy License View/ExcelData/license.asset";
-        private static readonly string[] sheetNames = { "licenses", };
+        private static readonly string[] sheetNames = { "license", };
 
         static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
         {
@@ -21,14 +20,6 @@ namespace Cucurbit
                 if (!filePath.Equals(asset))
                     continue;
 
-                EntityLicense data = (EntityLicense)AssetDatabase.LoadAssetAtPath(exportPath, typeof(EntityLicense));
-                if (data == null) {
-                    data = ScriptableObject.CreateInstance<EntityLicense>();
-                    AssetDatabase.CreateAsset((ScriptableObject)data, exportPath);
-                    data.hideFlags = HideFlags.NotEditable;
-                }
-
-                data.sheets.Clear();
                 using (FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite)) {
                     IWorkbook book = null;
                     if (Path.GetExtension(filePath) == ".xls") {
@@ -39,20 +30,30 @@ namespace Cucurbit
                     }
 
                     foreach (string sheetName in sheetNames) {
-                        ISheet sheet = book.GetSheet(sheetName);
+                        var exportPath = "Assets/Cucurbit/Easy License View/ExcelData/" + sheetName + ".asset";
+
+                        // check scriptable object
+                        var data = (EntityLicense)AssetDatabase.LoadAssetAtPath(exportPath, typeof(EntityLicense));
+                        if (data == null) {
+                            data = ScriptableObject.CreateInstance<EntityLicense>();
+                            AssetDatabase.CreateAsset((ScriptableObject)data, exportPath);
+                            data.hideFlags = HideFlags.NotEditable;
+                        }
+                        data.param.Clear();
+
+                        // check sheet
+                        var sheet = book.GetSheet(sheetName);
                         if (sheet == null) {
                             Debug.LogError("Sheet not found:" + sheetName);
                             continue;
                         }
 
-                        EntityLicense.Sheet s = new EntityLicense.Sheet();
-                        s.name = sheetName;
-
+                        // add infomation
                         for (int i = 1; i <= sheet.LastRowNum; i++) {
                             IRow row = sheet.GetRow(i);
                             ICell cell = null;
 
-                            EntityLicense.Param p = new EntityLicense.Param();
+                            var p = new EntityLicense.Param();
 
                             bool isComment = false;
                             ICell tmp = row.GetCell(0);
@@ -78,18 +79,16 @@ namespace Cucurbit
                             if (!isComment) {
                                 cell = row.GetCell(0); p.Title = (cell == null ? "" : cell.StringCellValue);
                                 cell = row.GetCell(1); p.Provision = (cell == null ? "" : cell.StringCellValue);
-                                s.list.Add(p);
+                                data.param.Add(p);
                             }
                         }
-                        data.sheets.Add(s);
+
+                        // save scriptable object
+                        ScriptableObject obj = AssetDatabase.LoadAssetAtPath(exportPath, typeof(ScriptableObject)) as ScriptableObject;
+                        EditorUtility.SetDirty(obj);
                     }
                 }
 
-                ScriptableObject obj = AssetDatabase.LoadAssetAtPath(exportPath, typeof(ScriptableObject)) as ScriptableObject;
-                EditorUtility.SetDirty(obj);
-
-                AssetDatabase.SaveAssets();
-                AssetDatabase.Refresh();
             }
         }
     }
